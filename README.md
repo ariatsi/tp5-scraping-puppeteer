@@ -130,7 +130,7 @@ Une fois le serveur lancé :
 -  utilisation d’un navigateur **headless**
 -  scraping limité et responsable
 -  cache local pour éviter les appels inutiles
--  séparation claire des responsabilités :
+- séparation claire des responsabilités :
   - scraping
   - nettoyage
   - fusion
