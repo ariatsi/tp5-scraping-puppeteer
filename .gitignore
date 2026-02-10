@@ -1,0 +1,50 @@
+# Dépendances Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Variables d'environnement (attention: à ne pas committer)
+.env
+.env.*
+!.env.example
+
+# Artefacts de build / caches
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+
+# Journaux applicatifs divers
+logs/
+*.log
+
+# IDE / éditeurs
+.idea/
+.vscode/
+*.iml
+
+# Divers
+*.pid
+*.pid.lock
