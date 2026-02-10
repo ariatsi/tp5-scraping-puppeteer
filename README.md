@@ -1,6 +1,6 @@
 # TP5 - Web Scraping avec Puppeteer (Node.js)
 
-## 🎯 Objectif pédagogique
+## Objectif pédagogique
 
 Ce TP a pour objectif de vous faire pratiquer **l’utilisation concrète d’une bibliothèque externe** en Node.js : **Puppeteer**.
 
