@@ -36,13 +36,31 @@ function renderCountriesPage(countries) {
 <head>
   <meta charset="UTF-8">
   <title>Countries</title>
+  <style>
+  table.countries-table {
+    border-collapse: collapse; /* remplace cellspacing */
+    width: 100%;
+  }
+
+  table.countries-table th,
+  table.countries-table td {
+    border: 1px solid #333;   /* remplace border */
+    padding: 6px;             /* remplace cellpadding */
+  }
+
+  table.countries-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+</style>
+
 </head>
 <body>
   <h1>Liste des pays (Wikipedia)</h1>
   <p><a href="/">Accueil</a></p>
   <p><a href="/export.csv">Télécharger le CSV</a></p>
 
-  <table border="1" cellpadding="6" cellspacing="0">
+  <table class="countries-table">
     <thead>
       <tr>
         <th>N°</th>
