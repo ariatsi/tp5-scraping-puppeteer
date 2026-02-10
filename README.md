@@ -136,7 +136,7 @@ Une fois le serveur lancé :
   - fusion
   - export
   - affichage
--  `.gitignore` pour éviter de versionner :
+- `.gitignore` pour éviter de versionner :
   - `node_modules/`
   - `.idea/`
   - fichiers temporaires
