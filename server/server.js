@@ -38,14 +38,14 @@ function renderCountriesPage(countries) {
   <title>Countries</title>
   <style>
   table.countries-table {
-    border-collapse: collapse; /* remplace cellspacing */
+    border-collapse: collapse;
     width: 100%;
   }
 
   table.countries-table th,
   table.countries-table td {
-    border: 1px solid #333;   /* remplace border */
-    padding: 6px;             /* remplace cellpadding */
+    border: 1px solid #333;
+    padding: 6px;
   }
 
   table.countries-table th {

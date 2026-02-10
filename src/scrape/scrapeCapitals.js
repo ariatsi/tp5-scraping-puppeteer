@@ -20,7 +20,6 @@ async function scrapeCapitals() {
 
     console.log('Page "capitales" chargée');
 
-
     const rows = await page.evaluate(() => {
         // const table = document.querySelector('table.wikitable');
         const h3 = document.querySelector('#Liste_principale');
@@ -29,7 +28,6 @@ async function scrapeCapitals() {
         const sectionRoot = h3.closest('.mw-heading')?.parentElement || document;
         const table = sectionRoot.querySelector('table.wikitable');
         if (!table) return [];
-
 
         const bodyRows = table.querySelectorAll('tbody tr');
 
@@ -91,11 +89,8 @@ async function scrapeCapitals() {
 
     writeJson('data/capitals.json', cleaned);
     console.log('Fichier écrit : data/capitals.json');
-
-
     console.log('Aperçu (3 lignes normalisées) :');
     console.log(normalized.slice(0, 3));
-
 
     await browser.close();
 }

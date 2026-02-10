@@ -26,17 +26,18 @@ const { scrapeCapitals } = require('./src/scrape/scrapeCapitals');
 const { mergeCountries } = require('./src/merge/mergeCountries');
 
 mergeCountries();
+
+
+// app.js
+const { exportCountriesCsv } = require('./src/export/exportCsv');
+
+exportCountriesCsv();
+
+// app.js
+const { startServer } = require('./server/server');
+
+startServer();
 */
-
-// app.js
-// const { exportCountriesCsv } = require('./src/export/exportCsv');
-//
-// exportCountriesCsv();
-
-// app.js
-// const { startServer } = require('./server/server');
-//
-// startServer();
 
 // app.js
 const { exists } = require('./src/utils/fileExists');

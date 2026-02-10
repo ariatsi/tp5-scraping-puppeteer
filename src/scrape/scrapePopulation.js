@@ -3,7 +3,6 @@ const puppeteer = require('puppeteer');
 const { writeJson } = require('../utils/fileWriter');
 const { parsePopulation, parseRank, cleanCountryName } = require('../utils/cleaners');
 
-
 async function scrapePopulation() {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
@@ -45,7 +44,6 @@ async function scrapePopulation() {
 
         return result;
     });
-
 
     // const cleaned = rows.map((r) => ({
     //     rank: parseRank(r.rank),

@@ -21,7 +21,6 @@ function csvEscape(value) {
     return str;
 }
 
-
 function exportCountriesCsv() {
     const countries = loadJson('data/countries.json');
     console.log(`Chargé : ${countries.length} pays depuis data/countries.json`);
@@ -56,8 +55,6 @@ function exportCountriesCsv() {
     fs.writeFileSync(outputPath, csvContent, 'utf-8');
 
     console.log('Fichier écrit : data/countries.csv');
-
 }
-
 
 module.exports = { exportCountriesCsv };

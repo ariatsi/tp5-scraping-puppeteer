@@ -47,17 +47,11 @@ function mergeCountries() {
         (c) => c.capital && c.flagThumbUrl
     );
 
-
     const outputPath = path.join(__dirname, '..', '..', 'data', 'countries.json');
     fs.writeFileSync(outputPath, JSON.stringify(cleaned, null, 2), 'utf-8');
 
     console.log(`Fichier écrit : data/countries.json (${cleaned.length} pays)`);
-
-
-    console.log(
-        `Population: ${populations.length} lignes | Capitales: ${capitals.length} lignes`
-    );
+    console.log(`Population: ${populations.length} lignes | Capitales: ${capitals.length} lignes`);
 }
-
 
 module.exports = { mergeCountries };
