@@ -1,4 +1,4 @@
-# TP5 — Web Scraping avec Puppeteer (Node.js)
+# TP5 - Web Scraping avec Puppeteer (Node.js)
 
 ## 🎯 Objectif pédagogique
 
